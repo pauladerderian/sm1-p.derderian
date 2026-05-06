@@ -530,8 +530,17 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 16px 80px;
+    max-width: 340px;
+    margin-top: 16px;
 }
+
+.footer-legal a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
 
 
 
