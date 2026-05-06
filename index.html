@@ -12,7 +12,33 @@
     <header>
         <!-- Navigation Bar -->
         <nav class="nav-bar">
-            <!-- Top NavBar -->
+            <!-- DESKTOP ONLY -->
+            <div class="nav-info-bar">
+                <div class="info-item">
+                    <img src="icons/location.svg" alt="Location">
+                    <span>Ensjøveien 5</span>
+                </div>
+                <div class="info-item">
+                    <img src="icons/clock.svg" alt="Hours">
+                    <span>Tuesday to Sunday 9:00-18:00</span>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="Rocket Icon">
+                        <div class="logo-text">
+                            <span class="logo-small">COMMUNITY SCIENCE</span>
+                            <span class="logo-big">MUSEUM</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <img src="icons/search.svg" alt="Search">
+                </div>
+            </div>
+            <!-- MOBILE ONLY -->
             <div class="nav-top">
                 <a href="index.html">
                     <div class="logo">
@@ -25,16 +51,16 @@
                 </a>
                 <div class="info-pills">
                     <div class="pill">
-                        <img src="icons/clock.svg" alt="Hours">
-                        <span>Tue-Sun 9:00-18:00</span>
-                    </div>
-                    <div class="pill">
                         <img src="icons/location.svg" alt="Location">
                         <span>Ensjøveien 5</span>
                     </div>
+                    <div class="pill">
+                        <img src="icons/clock.svg" alt="Hours">
+                        <span>Tue-Sun 9:00-18:00</span>
+                    </div>
                 </div>
             </div>
-            <!-- Bottom NavBar -->
+            <!-- Burger Menu -->
             <label class="nav-bottom" for="menu-toggle">
                 <div class="burger">
                     <div class="line"></div>
@@ -43,6 +69,13 @@
                 </div>
                 <span>MENU</span>
             </label>
+            <!-- DESKTOP ONLY: nav links -->
+            <div class="nav-links">
+                <a href="visit.html">Plan Your Visit</a>
+                <a href="museum.html">At The Museum</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
         </nav>
         <input type="checkbox" id="menu-toggle">
         <div class="dropdown">
@@ -60,7 +93,7 @@
     </header>
     <main>
         <section class="hero">
-            <img src="images/hero-img.png" alt="Child doing science expermient" class="hero-img" loading="eager">
+            <img src="images/hero.png" alt="Child doing science expermient" class="hero-img" loading="eager">
             <h1 class="hero-text">Let's explore together!</h1>
         </section>
         <section class="this-week">

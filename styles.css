@@ -1,11 +1,7 @@
 /* ===== FONTS ==== */
-
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap');
 
 /* === BASE ==== */
-
 * {
     margin: 0;
     padding: 0;
@@ -16,16 +12,9 @@ html { min-width: 320px; }
 
 body {
     font-family: "Nunito", sans-serif;
-    color:#131834;
+    color: #131834;
     background-color: #DCEDF3;
 }
-
-/* ===  MOBILE BASE === */
-
-.card {
-    width: 100%;
-}
-
 
 /* === HEADER AND NAV === */
 header {
@@ -39,8 +28,20 @@ nav {
     flex-direction: column;
 }
 
-/* === NAV TOP === */
+/* Hide desktop elements on mobile */
+.nav-info-bar {
+    display: none;
+}
 
+.nav-middle {
+    display: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+/* === NAV TOP (mobile) === */
 .nav-top {
     display: flex;
     flex-direction: column;
@@ -50,7 +51,6 @@ nav {
 }
 
 /* === LOGO === */
-
 .logo {
     display: flex;
     align-items: center;
@@ -68,8 +68,8 @@ header a {
 .logo-text {
     display: flex;
     flex-direction: column;
-    font-family: "fredoka one", cursive;
-    color:#131834;
+    font-family: "Fredoka One", cursive;
+    color: #131834;
 }
 
 .logo-small {
@@ -82,7 +82,6 @@ header a {
 }
 
 /* === PILLS === */
-
 .info-pills {
     display: flex;
     gap: 40px;
@@ -103,11 +102,10 @@ header a {
 
 .pill span {
     font-size: 0.75rem;
-    color:#131834;
+    color: #131834;
 }
 
-/* === NAV BOTTOM */
-
+/* === NAV BOTTOM === */
 .nav-bottom {
     display: flex;
     align-items: center;
@@ -124,7 +122,6 @@ header a {
 }
 
 /* === BURGER === */
-
 .burger {
     display: flex;
     flex-direction: column;
@@ -139,8 +136,7 @@ header a {
     border-radius: 3px;
 }
 
-/* === HIDDEN DROP DOWN === */
-
+/* === DROPDOWN === */
 #menu-toggle {
     display: none;
 }
@@ -150,7 +146,7 @@ header a {
     background-color: #EBF7FC;
     padding: 20px 16px;
     gap: 24px;
-    box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: none;
     position: absolute;
     top: 100%;
@@ -199,12 +195,11 @@ header a {
 
 .dropdown ul li a {
     text-decoration: none;
-    color:#131834;
-    font-size: 1,3rem;
+    color: #131834;
+    font-size: 1.3rem;
 }
 
-/* === MAIN PAGE === */
-
+/* === HERO === */
 .hero {
     position: relative;
 }
@@ -225,6 +220,7 @@ header a {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+/* === THIS WEEK + ADVENTURE === */
 .this-week,
 .adventure {
     padding: 40px 16px;
@@ -274,14 +270,13 @@ header a {
 }
 
 .card1-title h3 {
-    color:#22776E;
+    color: #22776E;
     font-size: 1.1rem;
-    align-items: center;
 }
 
 .card1-top p,
 .card2-top p {
-    color:#131834;
+    color: #131834;
     line-height: 1.6;
 }
 
@@ -328,8 +323,7 @@ header a {
     border: 1px solid #131834;
 }
 
-/* === Did you know - card === */
-
+/* === DID YOU KNOW === */
 .did-you-know {
     padding: 24px 16px;
     display: flex;
@@ -390,8 +384,7 @@ header a {
     text-align: center;
 }
 
-/* === FOOOTER === */
-
+/* === FOOTER === */
 footer {
     background-color: #22776E;
     padding: 40px 16px;
@@ -406,16 +399,13 @@ footer {
     align-items: center;
     gap: 16px;
     text-decoration: none;
+    color: white;
 }
 
 .footer-logo img {
     width: 50px;
     filter: brightness(0) invert(1);
 }
-
-.footer-logo .logo-text { color: white; }
-
-/* === SECTIONS === */
 
 .footer-section {
     width: 100%;
@@ -432,7 +422,6 @@ footer {
 }
 
 /* === SOCIAL === */
-
 .social-icons {
     display: flex;
     gap: 60px;
@@ -441,7 +430,6 @@ footer {
 .social-icons img { width: 44px; }
 
 /* === CONTACT === */
-
 .footer-contact {
     display: flex;
     flex-direction: column;
@@ -455,7 +443,7 @@ footer {
     gap: 16px;
 }
 
-.contact-row img { 
+.contact-row img {
     width: 24px;
     margin: 8px 8px 8px 16px;
 }
@@ -466,13 +454,12 @@ footer {
 }
 
 /* === OPENING HOURS === */
-
 .opening-hours {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    padding:  0 16px;
+    padding: 0 16px;
 }
 
 .hours-row {
@@ -491,13 +478,11 @@ footer {
     font-weight: 700;
 }
 
-/* === EXPLORE MORE ==== */
-
+/* === EXPLORE MORE === */
 .footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    justify-content: space-between;
+    gap: 16px 80px;
     width: 100%;
     justify-items: center;
 }
@@ -509,8 +494,7 @@ footer {
     font-weight: 500;
 }
 
-/* === BOTTOM === */
-
+/* === FOOTER BOTTOM === */
 .footer-bottom {
     width: 100%;
     display: flex;
@@ -530,7 +514,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px 80px;
+    gap: 8px 24px;
     max-width: 340px;
     margin-top: 16px;
 }
@@ -538,9 +522,166 @@ footer {
 .footer-legal a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
+/* =========================== TABLET =========================== */
+@media (min-width: 768px) {
 
+}
 
+/* =========================== DESKTOP =========================== */
+@media (min-width: 1024px) {
 
+    /* === TOP INFO BAR === */
+    .nav-info-bar {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        gap: 60px;
+        padding: 16px 40px;
+        background-color: #EBF7FC;;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .info-item span {
+        font-size: 0.9rem;
+        color: #131834;
+    }
+
+    .info-item img {
+        width: 16px;
+    }
+
+    /* === HIDE MOBILE NAV TOP === */
+    .nav-top {
+        display: none;
+    }
+
+    /* === MIDDLE BAR: logo + search === */
+    .nav-middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 40px 24px 60px;
+        width: 100%;
+        gap: 24px;
+                box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1)
+    }
+
+    .nav-middle .logo-text {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-middle .logo img {
+        width: 44px;
+    }
+
+    .nav-middle .logo-small {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .nav-middle .logo-big {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .search-wrapper {
+        width: 400px;
+    }
+
+    /* === BOTTOM BAR: nav links === */
+    .nav-bottom {
+        display: none;
+    }
+
+    /* Hide burger and MENU text */
+    .burger {
+        display: none;
+    }
+
+    .nav-bottom > span {
+        display: none;
+    }
+
+    /* Show nav links */
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        background-color: #22776E;
+        padding: 24px 40px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    /* === HERO === */
+    .hero-text {
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        top: 35%;
+        left: 60px;
+        transform: translateY(-50%);
+        bottom: auto;
+        white-space: normal;
+        text-align: left;
+        max-width: 450px;
+}
+
+    /* === THIS WEEK CARDS === */
+    .card1-container {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .card1 {
+        flex: 1;
+    }
+
+    /* === FOOTER === */
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 60px 80px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .footer-section {
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-legal {
+        margin-top: 0;
+        max-width: none;
+    }
+}
