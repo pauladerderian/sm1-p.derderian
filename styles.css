@@ -1,0 +1,468 @@
+/* ===== FONTS ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap');
+
+/* === BASE ==== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { min-width: 320px; }
+
+body {
+    font-family: "Nunito", sans-serif;
+    color:#131834;
+    background-color: #DCEDF3;
+}
+
+/* ===  MOBILE BASE === */
+
+.card {
+    width: 100%;
+}
+
+
+/* === HEADER AND NAV === */
+header {
+    background-color: #DCEDF3;
+    position: relative;
+    overflow: visible;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* === NAV TOP === */
+
+.nav-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 24px;
+}
+
+/* === LOGO === */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-family: "fredoka one", cursive;
+    color:#131834;
+}
+
+.logo-small {
+    font-size: 1rem;
+}
+
+.logo-big {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+/* === PILLS === */
+
+.info-pills {
+    display: flex;
+    gap: 40px;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #EBF7FC;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.pill img {
+    width: 18px;
+}
+
+.pill span {
+    font-size: 0.75rem;
+    color:#131834;
+}
+
+/* === NAV BOTTOM */
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #22776E;
+    padding: 16px;
+}
+
+.nav-bottom span {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* === BURGER === */
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 3px;
+}
+
+/* === HIDDEN DROP DOWN === */
+
+#menu-toggle {
+    display: none;
+}
+
+.dropdown {
+    flex-direction: column;
+    background-color: #EBF7FC;
+    padding: 20px 16px;
+    gap: 24px;
+    box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#menu-toggle:checked + .dropdown {
+    display: flex;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 16px 24px;
+    border: 1px solid #131834;
+    border-radius: 8px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    outline: none;
+    color: #5A5E75;
+}
+
+.search-wrapper img {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.dropdown ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.dropdown ul li a {
+    text-decoration: none;
+    color:#131834;
+    font-size: 1,3rem;
+}
+
+/* === MAIN PAGE === */
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.this-week,
+.adventure {
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.this-week h2,
+.adventure h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card1-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.card1,
+.card2 {
+    background-color: #EBF7FC;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #131834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card1-top { padding: 24px; }
+.card2-top { padding: 16px 8px; }
+
+.card1-top,
+.card2-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card1-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card1-title h3 {
+    color:#22776E;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.card1-top p,
+.card2-top p {
+    color:#131834;
+    line-height: 1.6;
+}
+
+.card2-top p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.card1-date {
+    color: #131834;
+    font-size: 0.8rem;
+}
+
+.card1-bottom,
+.card2-bottom {
+    background-color: #22776E;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-top: 1px solid #131834;
+}
+
+.card1-bottom span,
+.card2-bottom span {
+    color: white;
+    font-size: 1rem;
+}
+
+.arrow {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow img {
+    width: 20px;
+}
+
+.card2-top img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #131834;
+}
+
+/* === Did you know - card === */
+
+.did-you-know {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.dyk-card {
+    background-color: #EBF7FC;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #131834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.dyk-header {
+    background-color: #FDCD16;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #131834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dyk-header h3 {
+    color: #131834;
+    font-size: 1.4rem;
+}
+
+.dyk-body {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dyk-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.dyk-text p {
+    color: #131834;
+    line-height: 1.6;
+}
+
+.dyk-body img {
+    width: 140px;
+}
+
+.dyk-footer {
+    color: #131834;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* === FOOOTER === */
+
+footer {
+    background-color: #22776E;
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo .logo-text { color: white; }
+
+/* === SECTIONS === */
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-section h3 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* === SOCIAL === */
+
+.social-icons {
+    display: flex;
+    gap: 60px;
+}
+
+.social-icons img { width: 44px; }
+
+/* === CONTACT === */
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-row img { 
+    width: 24px;
+    margin: 8px 8px 8px 16px;
+}
+
+.contact-row p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+
