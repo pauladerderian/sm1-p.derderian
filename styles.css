@@ -213,10 +213,10 @@ header a {
 
 .hero-text {
     position: absolute;
-    bottom: 40px;
-    left: 30px;
+    bottom: 8px;
+    left: 40px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -572,7 +572,7 @@ footer {
         padding: 24px 40px 24px 60px;
         width: 100%;
         gap: 24px;
-                box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1)
+        box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1)
     }
 
     .nav-middle .logo-text {
@@ -617,17 +617,17 @@ footer {
     .nav-links {
         display: flex;
         justify-content: center;
-        gap: 80px;
+        gap: 160px;
         background-color: #22776E;
-        padding: 24px 40px;
+        padding: 24px 32px;
         width: 100%;
     }
 
     .nav-links a {
         color: white;
         text-decoration: none;
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 1.3rem;
+        font-weight: 300;
     }
 
     /* === HERO === */
