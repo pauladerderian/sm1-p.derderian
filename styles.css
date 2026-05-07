@@ -633,7 +633,7 @@ footer {
     /* === HERO === */
     .hero-text {
         font-size: clamp(2.5rem, 5vw, 4.5rem);
-        top: 35%;
+        top: 45%;
         left: 60px;
         transform: translateY(-50%);
         bottom: auto;
@@ -642,15 +642,53 @@ footer {
         max-width: 450px;
 }
 
-    /* === THIS WEEK CARDS === */
+    /* === THIS WEEK  === */
+
+.this-week,
+.adventure {
+    padding: 96px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.this-week h2,
+.adventure h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
     .card1-container {
         flex-direction: row;
         align-items: stretch;
+        max-width: 1440px;
+        margin: 0 auto;
+        gap: 104px;
     }
 
     .card1 {
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
+
+    .card1-top {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1-date { 
+        margin-top: auto; 
+        font-size: 1rem;
+}
+
+    .card1-title h3 { font-size: 1.2rem; }
+
+    /* === ADVENTURE === */
+
+    
 
     /* === FOOTER === */
     footer {
