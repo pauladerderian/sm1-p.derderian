@@ -533,6 +533,95 @@ footer {
 /* =========================== TABLET =========================== */
 @media (min-width: 768px) {
 
+    .card2 {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .card2-top {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        padding: 24px;
+        align-items: center;
+    }
+
+    .card2-top > p {
+        display: none;
+    }
+
+    .card2-top img {
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .card2-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 1;
+    }
+
+    .card2-content::before {
+        content: "Dinosaurs, robots, galaxies and everything in between!";
+        font-size: 1rem;
+        color: #131834;
+        line-height: 1.6;
+        font-weight: 700;
+    }
+
+    .card2-list {
+        list-style: disc;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card2-bottom {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footer-logo .logo-small,
+    .footer-logo .logo-big {
+        color: white;
+    }
+
+    .footer-middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        gap: 80px;
+    }
+
+    .footer-middle .footer-section { align-items: flex-start; }
+
+    .footer-middle .footer-section h3 {
+        text-align: center;
+        margin-bottom: 16px;
+        white-space: nowrap;
+        align-self: center;
+        font-size: 1.4rem;
+    }
+
+    .opening-hours {
+        padding: 0;
+        min-width: 260px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 64px 60px;
+        justify-items: center;
+    }
+
 }
 
 /* =========================== DESKTOP =========================== */
