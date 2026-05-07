@@ -396,6 +396,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2) ;
 }
 
 .footer-logo {
@@ -650,7 +651,7 @@ footer {
 
 .this-week,
 .adventure {
-    padding: 96px 16px;
+    padding: 64px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -789,11 +790,11 @@ footer {
 
     .dyk-footer {
         margin: 24px auto 40px auto;
+        font-size: 1.2rem;
     }
 
-
-
     /* === FOOTER === */
+
     footer {
         flex-direction: column;
         align-items: center;
@@ -804,6 +805,7 @@ footer {
     .footer-logo {
         width: 100%;
         justify-content: center;
+        margin: 40px auto;
     }
 
     .footer-logo .logo-text {
@@ -831,10 +833,10 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        max-width: 800px;
-        margin: 0 auto;
+        max-width: 1200px;
+        margin: 40px auto;
         width: 100%;
-        gap: 120px;
+        gap: 400px;
     }
 
     .footer-middle .footer-section { 
@@ -849,12 +851,14 @@ footer {
         margin-bottom: 16px;
         white-space: nowrap;
         align-self: center;
+        font-size: 1.4rem;
     }
 
-    .opening-hours {
-        padding: 0;
-        min-width: 260px;
+    .contact-row p,
+    .opening-hours p {
+        font-size: 1rem;
     }
+    
 
 .footer-middle .footer-section:last-child .opening-hours {
     min-width: 280px;
@@ -863,6 +867,12 @@ footer {
     .footer-section {
         width: 100%;
         align-items: flex-start;
+    }
+
+    .opening-hours {
+        padding: 0;
+        min-width: 260px;
+        gap: 40px;
     }
 
     .hours-row {
@@ -883,7 +893,7 @@ footer {
 
     .footer-links {
         grid-template-columns: repeat(4, 1fr);
-        gap: 40px 60px;
+        gap: 64px 60px;
         justify-items: center;
     }
 
