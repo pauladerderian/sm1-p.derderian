@@ -221,6 +221,7 @@ header a {
 }
 
 /* === THIS WEEK + ADVENTURE === */
+
 .this-week,
 .adventure {
     padding: 40px 16px;
@@ -327,6 +328,73 @@ header a {
     display: none;
 }
 
+/* === EXHIBITIONS === */
+
+.page-title {
+    font-size: 2rem;
+    color: #131834;
+    text-align: center;
+    padding: 24px 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card3-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 16px;
+}
+
+.card3 {
+    background-color: #EBF7FC;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #131834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card3-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card3-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color:#22776E;
+    font-size: 1.1rem;
+}
+
+.card3-title img {
+    width: 24px;
+}
+
+.card3-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 8px solid #131834;
+    object-fit: cover;
+    height: 200px
+}
+
+.card3-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+}
+
+.card3-bottom p {
+    color: #131834;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
 /* === DID YOU KNOW === */
 .did-you-know {
     padding: 24px 16px;
@@ -389,6 +457,7 @@ header a {
 }
 
 /* === FOOTER === */
+
 footer {
     background-color: #22776E;
     padding: 40px 16px;
@@ -407,6 +476,13 @@ footer {
     color: white;
 }
 
+.footer-logo-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Fredoka One", cursive;
+}
+
 .footer-logo img {
     width: 50px;
     filter: brightness(0) invert(1);
@@ -418,6 +494,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    margin: 24px;
 }
 
 .footer-section h3 {
@@ -425,6 +502,18 @@ footer {
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.footer-middle .footer-section {
+    align-items: center;
+}
+
 
 /* === SOCIAL === */
 .social-icons {
@@ -484,6 +573,7 @@ footer {
 }
 
 /* === EXPLORE MORE === */
+
 .footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -497,6 +587,7 @@ footer {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
+    margin: 16px;
 }
 
 /* === FOOTER BOTTOM === */
@@ -882,7 +973,58 @@ footer {
         font-size: 1.2rem;
     }
 
+    /* === EXHIBITIONS === */
+
+    .page-title {
+        font-size: 3rem;
+    }
+    
+    .card3-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 40px 80px 80px 80px;
+        gap: 80px 120px;
+    }
+
+    .card3 {
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card3-title {
+        margin: 16px;
+    }
+
+    .card3-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .card3-title img {
+        width: 48px;
+    }
+
+    .card3-img {
+        height: 360px;
+    }
+
+    .card3-bottom {
+        flex: 1;
+        justify-content: center;
+        padding: 24px;
+    }
+
+    .card3-bottom p {
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.8;
+        
+    }
+
     /* === FOOTER === */
+
 
     footer {
         flex-direction: column;
@@ -922,7 +1064,7 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 40px auto;
         width: 100%;
         gap: 400px;
@@ -958,16 +1100,22 @@ footer {
         align-items: flex-start;
     }
 
+    .footer-section h3 {
+        text-align: center;
+    }
+
     .opening-hours {
         padding: 0;
         min-width: 260px;
         gap: 40px;
+        align-items: center;
     }
 
     .hours-row {
         gap: 40px;
         justify-content: space-between;
-        min-width: 260px;
+        max-width: 280px;
+        width: 100%;
     }
 
     .footer-explore {
