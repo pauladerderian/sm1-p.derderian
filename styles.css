@@ -624,6 +624,8 @@ footer {
 /* =========================== TABLET =========================== */
 @media (min-width: 768px) {
 
+/* === MAIN PAGE === */
+
     .card2 {
         max-width: 900px;
         margin: 0 auto;
@@ -677,6 +679,17 @@ footer {
         justify-content: center;
         gap: 24px;
     }
+
+/* === EXHIBITIONS === */
+
+.card3-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 56px;
+    padding: 24px 40px;
+}
+
+/* === FOOTER === */
 
     .footer-logo .logo-small,
     .footer-logo .logo-big {
