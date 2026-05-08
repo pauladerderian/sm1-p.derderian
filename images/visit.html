@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plan your visit | CSM </title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Plan your visit to our museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <!-- DESKTOP ONLY -->
+            <div class="nav-info-bar">
+                <div class="info-item">
+                    <img src="icons/location.svg" alt="Location">
+                    <span>Ensjøveien 5</span>
+                </div>
+                <div class="info-item">
+                    <img src="icons/clock.svg" alt="Hours">
+                    <span>Tuesday to Sunday 9:00-18:00</span>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="Rocket Icon">
+                        <div class="logo-text">
+                            <span class="logo-small">COMMUNITY SCIENCE</span>
+                            <span class="logo-big">MUSEUM</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <img src="icons/search.svg" alt="Search">
+                </div>
+            </div>
+            <!-- MOBILE ONLY -->
+            <div class="nav-top">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="Rocket icon">
+                        <div class="logo-text">
+                            <span class="logo-small">COMMUNITY SCIENCE</span>
+                            <span class="logo-big">MUSEUM</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="info-pills">
+                    <div class="pill">
+                        <img src="icons/location.svg" alt="Location">
+                        <span>Ensjøveien 5</span>
+                    </div>
+                    <div class="pill">
+                        <img src="icons/clock.svg" alt="Hours">
+                        <span>Tue-Sun 9:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Burger Menu -->
+            <label class="nav-bottom" for="menu-toggle">
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <span>MENU</span>
+            </label>
+            <!-- DESKTOP ONLY: nav links -->
+            <div class="nav-links">
+                <a href="visit.html">Plan Your Visit</a>
+                <a href="museum.html">At The Museum</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+        <input type="checkbox" id="menu-toggle">
+        <div class="dropdown">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search" class="search-bar">
+                <img src="icons/search.svg" alt="Search">
+            </div>
+            <ul>
+                <li><a href="visit.html">Plan Your Visit</a></li>
+                <li><a href="museum.html">At The Museum</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Plan your visit</h1>
+        <section class="card3-container">
+        <div class="card3">
+            <div class="card3-top">
+                <div class="card3-title">
+                    <h2>FIND US</h2>
+                </div>
+                <img src="images/find-us.jpg" alt="Outside view of the musuem" class="card3-img">
+            </div>
+            <div class="card3-bottom">
+                <p>We are located at Ensjøveien 5, close to the metro station.</p>
+                <p>Take metro lines 1, 2, 3 or 4, then walk about 500 m.</p>
+                <p>We are open from Tuesday to Sunday from 9:00 until 18:00</p>
+            </div>
+        </div>
+        <div class="card3">
+            <div class="card3-top">
+                <div class="card3-title">
+                    <h2>FREE ENTRY</h2>
+                </div>
+                <img src="images/free-entry.jpg" alt="Family exploring the museum" class="card3-img">
+            </div>
+            <div class="card3-bottom">
+                <p>Free admission for all visitors</p>
+                <p>Walk in anytime</p>
+                <p>No booking needed</p>
+            </div>
+        </div>
+    </section>
