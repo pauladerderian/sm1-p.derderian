@@ -429,8 +429,15 @@ header a {
 }
 
 .explore-more .card3-bottom {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    flex: 1;
+}
+
+.explore-more .card3 {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -728,6 +735,27 @@ footer {
     padding: 24px 40px;
 }
 
+/* === AT THE MUSEUM === */
+
+.accessibility .card3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.accessibility .card3-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.explore-more .card3-container {
+    max-width: 730px;
+    margin: 0 auto;
+    gap: 56px;
+}
+
+
 /* === FOOTER === */
 
     .footer-logo .logo-small,
@@ -989,42 +1017,6 @@ footer {
         font-weight: 700;
     }
 
-    /* === DID YOU KNOW === */
-
-    .dyk-card {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-
-    .dyk-text {
-        flex: 0;
-        min-width: 600px;
-        text-align: center;
-        gap: 40px;
-    }
-    .dyk-text p {
-        font-size: 1.3rem;
-    }
-
-    .dyk-header h3 {
-        font-size: 1.8rem;
-    }
-
-    .dyk-body {
-        justify-content: center;
-        gap: 40px;
-        padding: 40px 60px 40px 80px;
-    }
-
-    .dyk-body img {
-        width: 180px;
-    }
-
-    .dyk-footer {
-        margin: 24px auto 40px auto;
-        font-size: 1.2rem;
-    }
-
     /* === EXHIBITIONS === */
 
     .page-title {
@@ -1074,6 +1066,77 @@ footer {
         line-height: 1.8;
         
     }
+
+    /* === AT THE MUSEUM === */
+
+    .services h2,
+    .accessibility h2,
+    .explore-more h2 {
+        font-size: 1.8rem;
+    }
+
+    .services h3,
+    .accessibility h3,
+    .explore-more h3 {
+        font-size: 1.5rem;
+    }
+
+    .services .card3,
+    .accessibility .card3,
+    .explore-more .card3 {
+        min-height: unset;
+    }
+
+    .services .card3-container,
+    .accessibility .card3-container,
+    .explore-more .card3-container {
+        max-width: 1200px;
+        gap: 40px;
+        padding:  24px 40px;
+    }
+
+    .accessibility .card3-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* === DID YOU KNOW === */
+
+    .dyk-card {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .dyk-text {
+        flex: 0;
+        min-width: 600px;
+        text-align: center;
+        gap: 40px;
+    }
+    .dyk-text p {
+        font-size: 1.3rem;
+    }
+
+    .dyk-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .dyk-body {
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 60px 40px 80px;
+    }
+
+    .dyk-body img {
+        width: 180px;
+    }
+
+    .dyk-footer {
+        margin: 24px auto 40px auto;
+        font-size: 1.2rem;
+    }
+
 
     /* === FOOTER === */
 
