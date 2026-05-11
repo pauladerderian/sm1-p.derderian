@@ -405,24 +405,34 @@ header a {
 
 /* === AT THE MUSEUM === */
 
-.services h2 {
+.services h2,
+.accessibility h2,
+.explore-more h2 {
     text-align: center;
     margin: 24px auto 16px auto;
     font-size: 1.5rem;
     font-weight: 200;
 }
 
-.services .card3-container {
+.services .card3-container,
+.explore-more .card3-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     padding: 24px 16px;
 }
 
-.services .card3-top {
+.services .card3-top,
+.accessibility .card3-top {
     padding: 16px 16px 0;
     gap: 0;
 }
+
+.explore-more .card3-bottom {
+    flex: 1;
+    justify-content: center;
+}
+
 
 /* === DID YOU KNOW === */
 .did-you-know {
