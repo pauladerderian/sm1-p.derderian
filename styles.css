@@ -442,12 +442,30 @@ header a {
 
 /* === CONTACT US === */
 
+.contact-intro p {
+    text-align: center;
+    margin: 8px auto 16px auto;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.contact {
+    padding: 0 16px 24px 16px;
+    margin-bottom: 24px;
+}
+
+.contact-intro {
+    margin-bottom: 48px;
+}
+
 .contact-form {
     background-color: #EBF7FC;
     border: 1px solid #131834;
     border-radius: 8px;
     padding: 32px 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 form {
@@ -473,7 +491,7 @@ form {
     padding: 16px;
     border: 1px solid #131834;
     border-radius: 8px;
-    font-family: "Nunito"; sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     background-color: white;
     color: #131834;
@@ -494,7 +512,7 @@ form {
     border: 1px solid #131834;
     border-radius: 16px;
     padding: 16px 40px;
-    font-family: "Nunito" sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
