@@ -1239,6 +1239,11 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* === CONFIRMATION === */
+
+    .buttons {
+        gap: 80px;
+    }
 
     /* === DID YOU KNOW === */
 
@@ -1293,7 +1298,7 @@ footer {
         margin: 40px auto;
     }
 
-    .footer-logo .logo-text {
+    .footer-logo .footer-logo-text {
         flex-direction: row;
         gap: 8px;
         align-items: center;
