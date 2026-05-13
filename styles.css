@@ -128,7 +128,7 @@ header a {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #22776E;
+    background-color: #1A5650;
     padding: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -289,7 +289,7 @@ header a {
 }
 
 .card1-title h3 {
-    color: #22776E;
+    color: #1A5650;
     font-size: 1.1rem;
 }
 
@@ -311,7 +311,7 @@ header a {
 
 .card1-bottom,
 .card2-bottom {
-    background-color: #22776E;
+    background-color: #1A5650;
     padding: 16px 24px;
     display: flex;
     align-items: center;
@@ -383,7 +383,7 @@ header a {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    color:#22776E;
+    color:#1A5650;
     font-size: 1.1rem;
 }
 
@@ -696,7 +696,7 @@ form {
 /* === FOOTER === */
 
 footer {
-    background-color: #22776E;
+    background-color: #1A5650;
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
@@ -1087,7 +1087,7 @@ footer {
         display: flex;
         justify-content: center;
         gap: 160px;
-        background-color: #22776E;
+        background-color: #1A5650;
         padding: 24px 32px;
         width: 100%;
     }
