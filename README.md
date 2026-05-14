@@ -5,15 +5,21 @@ A responsive, multi-page website for a fictional science museum aimed at childre
 
 Built as a vocational school projet for a front-end web development program.
 
+
+
 **Description**
 
 The Community Science Museum website is designed to inform visitors about the museum's exhibitions, events, services, and how to plan their visit. The design is child-friendly and accessible, with a focus on clarity and ease of navigation.
+
+
 
 **Built With**
 
 - HTML5
 - CSS3
 - No JavaScript
+
+
 
 **Features**
 
@@ -23,6 +29,8 @@ The Community Science Museum website is designed to inform visitors about the mu
 - Semantic HTML5 structure
 - WCAG accessibility considerations
 - W3C validated HTML and CSS
+
+
 
 **Pages**
 
@@ -43,13 +51,18 @@ Confirmation — Form submission confirmation
 Newsletter Confirmation — Newsletter signup confirmation
 
 
+
 **How to Run**
 
 Open index.html in a browser, or visit the live site via GitHub Pages.
 
+
+
 **Status**
 
 School project
+
+
 
 **Author**
 
