@@ -532,7 +532,7 @@ form {
 .btn {
     background-color: #FDCD16;
     border: 1px solid #131834;
-    color: #131834;
+    color: #131834 !important;
     border-radius: 16px;
     padding: 16px 40px;
     font-family: "Nunito", sans-serif;
@@ -578,7 +578,7 @@ form {
 .buttons .btn {
     background-color: #FDCD16;
     border: 1px solid #131834;
-    color: #131834;
+    color: #131834 !important;
     border-radius: 16px;
     padding: 16px 32px;
     font-family: "Nunito", sans-serif;
