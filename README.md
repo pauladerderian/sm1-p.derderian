@@ -16,18 +16,40 @@ The Community Science Museum website is designed to inform visitors about the mu
 **Built With**
 
 - HTML5
+
 - CSS3
+
 - No JavaScript
+
+**AI Log**
+
+Tool used: ChatGPT
+Date: 22 April to 29 April 2026
+Purpose: Assisted with simplyfying copy for the website.
+
+Tool used: Figma
+Date: 22 April to 29 April 2026
+Purpose: Generated characters for the Did you know...? section.
+
+Tool used: Claude
+Date: 29 April to 16 May 2026
+Purpose: Provided guidance on CSS layout and responsive design issues, helped debug HTML and Git errors, assisted with simplifying copy for the website.
+
 
 
 
 **Features**
 
 - Mobile-first responsive design (mobile, tablet, desktop)
+
 - CSS-only burger menu with dropdown navigation
+
 - CSS-only search bar
+
 - Semantic HTML5 structure
+
 - WCAG accessibility considerations
+
 - W3C validated HTML and CSS
 
 
@@ -62,6 +84,10 @@ Open index.html in a browser, or visit the live site via GitHub Pages.
 
 School project
 
+
+**Live URL**
+
+https://pauladerderian.github.io/sm1-p.derderian/ 
 
 
 **Author**

@@ -108,7 +108,7 @@ header a {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: #EBF7FC;
+    background-color: white;
     border-radius: 16px;
     padding: 8px 16px;
 }
@@ -161,7 +161,7 @@ header a {
 
 .dropdown {
     flex-direction: column;
-    background-color: #EBF7FC;
+    background-color: white;
     padding: 20px 16px;
     gap: 24px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -264,7 +264,7 @@ header a {
 
 .card1,
 .card2 {
-    background-color: #EBF7FC;
+    background-color: white;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #131834;
@@ -364,7 +364,7 @@ header a {
 }
 
 .card3 {
-    background-color: #EBF7FC;
+    background-color: white;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #131834;
@@ -477,7 +477,7 @@ header a {
 }
 
 .contact-form {
-    background-color: #EBF7FC;
+    background-color: white;
     border: 1px solid #131834;
     border-radius: 8px;
     padding: 32px 24px;
@@ -613,7 +613,7 @@ form {
 }
 
 .newsletter-form {
-    background-color: #EBF7FC;
+    background-color: white;
     border: 1px solid #131834;
     border-radius: 8px;
     padding: 32px 24px;
@@ -644,7 +644,7 @@ form {
 }
 
 .dyk-card {
-    background-color: #EBF7FC;
+    background-color: white;
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid #131834;
@@ -1011,7 +1011,7 @@ footer {
         margin-top: 0px;
         gap: 60px;
         padding: 16px 40px;
-        background-color: #EBF7FC;;
+        background-color: white;;
     }
 
     .info-item {
